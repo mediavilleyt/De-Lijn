@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="De_Lijn.MainPage"
+             BackgroundColor="Black">
+
+    <ScrollView Margin="20,50,5,5">
+        <VerticalStackLayout>
+            <Label x:Name="halteNameLabel"
+                   Text="Halte Name will appear here"
+                   TextColor="White"
+                   FontSize="Micro"/>
+
+            <Border StrokeShape="RoundRectangle 10,10,10,10"
+                    Stroke="Transparent">
+                <VerticalStackLayout BackgroundColor="#242628">
+                    <HorizontalStackLayout>
+                        <Border StrokeShape="RoundRectangle 0,0,0,10"
+                                x:Name="lijnNummerBorder"
+                                Stroke="Transparent">
+                            <Label TextColor="White"
+                                   HorizontalTextAlignment="Center"
+                                   VerticalTextAlignment="Center"
+                                   x:Name="lijnNummerLabel"
+                                   MinimumWidthRequest="40"
+                                   Padding="5,0,0,0">630</Label>
+                        </Border>
+                        <Label TextColor="White"
+                               Margin="5"
+                               x:Name="bestemmingLabel"
+                               FontSize="Micro">Brabanthal</Label>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Margin="10">
+                        <Label TextColor="#752d2f"
+                               FontAttributes="Bold"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"
+                               Margin="5"
+                               x:Name="verschil"
+                               FontSize="Micro">
+                            +3
+                        </Label>
+                        <Border StrokeShape="RoundRectangle 5,5,5,5"
+                                Background="Transparent"
+                                Stroke="Transparent">
+                            <Label HorizontalTextAlignment="Center"
+                                   VerticalTextAlignment="Center"
+                                   TextColor="White"
+                                   Padding="5"
+                                   FontAttributes="Bold"
+                                   x:Name="tijd"
+                                   FontSize="Micro">
+                                11:00
+                            </Label>
+                        </Border>
+                        <Label HorizontalTextAlignment="Center"
+                               VerticalTextAlignment="Center"
+                               Margin="5"
+                               TextColor="White"
+                               x:Name="wachtTijd"
+                               FontSize="Micro">
+                            12 min
+                        </Label>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
